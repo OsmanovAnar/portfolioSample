@@ -1,14 +1,11 @@
 @use "./mixins" as *;
 
-* {
-  border: 0.5px solid green; /* IGNORE */
-}
-
 %flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 %flex-between {
   display: flex;
   justify-content: space-between;
@@ -24,6 +21,7 @@
   align-items: center;
   color: #ffffff;
 }
+
 .header {
   margin-top: 75px;
   @include adaptiveValue("width", 1169, 330);
@@ -52,8 +50,8 @@
 p {
   font-size: 48px;
 }
+
 h1 {
-  // font-size: 90px;
   @include adaptiveValue("font-size", 90, 50);
 }
 
@@ -78,6 +76,7 @@ h1 {
   min-height: 591px;
   @extend %flex-center;
   flex-direction: column;
+
   & h2 {
     min-width: 211px;
     height: 62px;

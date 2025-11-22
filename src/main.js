@@ -1,7 +1,13 @@
 import "the-new-css-reset/css/reset.css";
-import './style.scss'
+import "./style.scss";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
+
+
+
+  <div class="wrapper">
+
+
 
 
     <div class="hero-section">
@@ -97,4 +103,11 @@ document.querySelector('#app').innerHTML = `
 
   </div>
 
-`
+
+
+
+
+  </div>
+
+
+`;
