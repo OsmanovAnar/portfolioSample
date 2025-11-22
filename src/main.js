@@ -1,2 +1,100 @@
 import "the-new-css-reset/css/reset.css";
 import './style.scss'
+
+document.querySelector('#app').innerHTML = `
+
+
+    <div class="hero-section">
+
+      <header class="header">
+
+        <nav class="header__nav">
+
+          <a class="header__nav-logo" href="#"><img width="158.67" height="52.31" src="/logotype.png"
+              alt=""></a>
+
+          <ul class="header__nav-menu">
+            <li href="#">Обо мне</li>
+            <li href="#">Навыки</li>
+            <li href="#">Услуги</li>
+            <li href="#">Портфолио</li>
+            <li href="#">Отзывы</li>
+            <li href="#">Контакты</li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+
+      <div class="greeting">
+
+        <p> Привет, я Иван Иванов </p>
+        <h1>frontend-
+          <br> разработчик
+        </h1>
+
+
+
+      </div>
+
+      <div class="hero-section-footer">
+        <p>смотреть работы</p>
+        <button><img width="37px" height="23px" src="/seeWorks.png" alt=""></button>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="about">
+
+
+      <h2>Обо мне</h2>
+
+      <p>Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой более года. До
+        разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за что взяться, чтобы дело
+        приносило удовольствие и деньги, пока не наткнулся на один интересный курс.</p>
+
+      <p>С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то сложнее.
+        Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через несколько месяцев
+        принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и примерами работ можно ознакомиться ниже.
+      </p>
+
+    </div>
+
+
+
+    <div class="skills">
+
+
+      <h2 class="skills_tite">Навыки</h2>
+
+      <div class="skills-content">
+
+        <img width="425" height="540" src="/myPhoto.png" alt="theMan">
+
+        <div class="my-stack">
+          <div class="skill-line">
+            <div class="progress" style="max-width: 90%;"></div>
+          </div>
+          <div class="skill-line">
+            <div class="progress" style="max-width: 80%;"></div>
+          </div>
+          <div class="skill-line">
+            <div class="progress" style="max-width: 60%;"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+  </div>
+
+`
