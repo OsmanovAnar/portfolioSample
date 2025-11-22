@@ -20,12 +20,12 @@ document.querySelector("#app").innerHTML = `
               alt=""></a>
 
           <ul class="header__nav-menu">
-            <li href="#">Обо мне</li>
-            <li href="#">Навыки</li>
-            <li href="#">Услуги</li>
-            <li href="#">Портфолио</li>
-            <li href="#">Отзывы</li>
-            <li href="#">Контакты</li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Навыки</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
 
         </nav>
