@@ -1,19 +1,27 @@
 @use "./mixins" as *;
 
-html {
-  scroll-behavior: smooth;
-}
-
 %flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 %flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.section {
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .hero-section {
@@ -76,6 +84,7 @@ h1 {
 }
 
 #about {
+
   margin: auto;
   max-width: 1170px;
   width: 100%;
@@ -96,17 +105,18 @@ h1 {
   }
 }
 
-.skills {
+.about-content {
+display: flex;
+flex-direction: column;
+gap: 30px;}
+
+#skills {
   margin: auto;
   max-width: 1170px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 60px;
-}
-
-.skills__title {
-  font-size: 48px;
 }
 
 .skills__content {
@@ -136,6 +146,7 @@ h1 {
   font-weight: 600;
 }
 
+
 .skills__bar {
   width: 100%;
   height: 28px;
@@ -152,7 +163,6 @@ h1 {
 
 .section-title {
   font-size: 48px;
-  margin-top: 140px;
 }
 
 #services {
@@ -165,8 +175,15 @@ h1 {
 }
 
 .services-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 90px;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .services__title {
