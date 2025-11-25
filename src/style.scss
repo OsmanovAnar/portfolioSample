@@ -79,8 +79,9 @@ h1 {
   margin: auto;
   max-width: 1170px;
   width: 100%;
-  @extend %flex-center;
+  display: flex;
   flex-direction: column;
+  gap: 60px;
 
   & h2 {
     min-width: 211px;
@@ -101,7 +102,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 60px;
 }
 
 .skills__title {
@@ -114,12 +115,8 @@ h1 {
   display: flex;
   align-items: center;
   gap: 60px;
-  /* расстояние между фото и списком */
 }
 
-.skills__photo {
-  flex-shrink: 0;
-}
 
 .skills__list {
   width: 665px;
@@ -155,12 +152,16 @@ h1 {
 
 .section-title {
   font-size: 48px;
+  margin-top: 140px;
 }
 
 #services {
   max-width: 1170px;
   width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .services-list {
