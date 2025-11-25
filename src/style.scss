@@ -76,8 +76,9 @@ h1 {
 }
 
 #about {
-  max-width: 100vw;
-  min-height: 591px;
+  margin: auto;
+  max-width: 1170px;
+  width: 100%;
   @extend %flex-center;
   flex-direction: column;
 
@@ -94,34 +95,89 @@ h1 {
   }
 }
 
-#skills {
-  max-width: 100vw;
+.skills {
+  margin: auto;
+  max-width: 1170px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
-.skills-content {
-  display: flex;
-  align-items: center;
-  justify-content: spasce-around;
-  gap: 90px;
-}
-
-.skills_tite {
+.skills__title {
   font-size: 48px;
 }
 
-.my-stack {
-  max-width: 665px;
+.skills__content {
+  max-width: 1170px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 85px;
+  align-items: center;
+  gap: 60px;
+  /* расстояние между фото и списком */
 }
 
-.skill-line {
-  max-width: 600px;
-  height: 32px;
-  background-color: #2352de;
+.skills__photo {
+  flex-shrink: 0;
+}
+
+.skills__list {
+  width: 665px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.skills__item {
+  display: flex;
+  gap: 8px;
+}
+
+.skills__name {
+  width: 65px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skills__bar {
+  width: 100%;
+  height: 28px;
+  background: #dbdbed;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skills__progress {
+  height: 100%;
+  background-color: #4A6CF7;
+  /* приятная анимация */
+}
+
+.section-title {
+  font-size: 48px;
+}
+
+#services {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+.services-list {
+  display: flex;
+  gap: 90px;
+}
+
+.services__title {
+  font-size: 28px;
+}
+
+.services__description {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1185px) {
+  .skills__content {
+    flex-direction: column;
+  }
 }
