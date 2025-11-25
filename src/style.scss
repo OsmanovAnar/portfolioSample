@@ -1,4 +1,5 @@
 @use "./mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 %flex-center {
   display: flex;
@@ -16,6 +17,8 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+
 }
 
 
@@ -106,9 +109,10 @@ h1 {
 }
 
 .about-content {
-display: flex;
-flex-direction: column;
-gap: 30px;}
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 #skills {
   margin: auto;
